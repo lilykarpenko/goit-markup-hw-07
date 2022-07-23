@@ -1,0 +1,13 @@
+.portfolio-cection {
+    padding-top: 83px;
+    padding-bottom: 99px;
+  }
+  .portfolio__list-button {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  
+  .portfolio__item-button:not(:first-child){
+    margin-left: 8px;
+  }

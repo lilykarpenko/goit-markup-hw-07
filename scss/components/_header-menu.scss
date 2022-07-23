@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .menu__list {
+    display: flex;
+    margin-left: 93px;
+  }
+  .menu__item{
+    margin-right: 50px;
+  }
+  .menu__item:last-child {
+    margin-right: 0;}
+  .menu__linc{
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      &:focus, &:hover{color: var(--blu-color);}
+  }
+  
+  .menu__linc--active {
+    color: var(--blu-color);
+    position: relative;
+  }
+  
+  .menu__linc--active::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-color: var(--blu-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }

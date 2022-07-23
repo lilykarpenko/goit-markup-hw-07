@@ -1,0 +1,34 @@
+.section-customers {
+    padding-bottom: 85px;
+  }
+  
+  .customers__list {
+    margin-left: -30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .customers__linc {
+    @extend %flex-centered;
+    border: 1px solid var(--icon-color);
+    border-radius: 4%;
+    width: 170px;
+    height: 92px;
+    transition: border 250ms var(--cubic-bezier);
+    &:hover, &:focus{
+      border: 1px solid var(--blu-color);
+    }
+  }
+  
+  .customers__icon {
+    fill: var(--icon-color);
+    transition: fill 250ms var(--cubic-bezier);
+    .customers__linc:hover &,.customers__linc:focus &{
+      fill: var(--blu-color);
+    }
+  }
+  
+  .customers__item {
+    flex-basis: calc(16.6666666667% - var(--card-set-gap));
+    margin-left: var(--card-set-gap);
+  }
